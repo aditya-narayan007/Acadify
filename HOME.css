@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.mainBox{
+    border:solid black 2px;
+    height:60vh;
+    width:100vw;
+    display: inline-block;
+    text-align: center;
+    padding-top: 100px;
+    line-height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+.mainBox input{
+    margin-top: 50px;
+    width: 60vw;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 20px;
+}
+.header-mainBox{
+    border: solid black 1px;
+    height: 10vh;
+    width: 100vw;
+}
