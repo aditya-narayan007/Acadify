@@ -8,47 +8,174 @@
   font-variation-settings:
     "wdth" 100;
 }
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* Logo left, nav center, button right */
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #f8f9fb;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
- .mainBox {
-    border: solid black 2px;
+/* Logo */
+.navbar img {
+  height: 60px;   /* smaller, cleaner */
+  width: auto;
+}
+
+/* Nav items container */
+.navbar .nav-item {
+  position: relative;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+/* Nav button (Students, College, Clubs) */
+.dropbtn {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 20px;
+  transition: background 0.2s ease;
+  color: #333;
+}
+
+.dropbtn:hover {
+  background-color: #e8e9ec;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 110%;  /* so it sits below button */
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+/* Signup button */
+.signup_btn button {
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #28a745, #22d122);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.signup_btn button:hover {
+  background: linear-gradient(135deg, #22d122, #1bb91b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.signup_btn button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.mainBox {
     height: 60vh;
     width: 100vw;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 100px;
-    line-height: 30px;
-    background-color: black;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
     color: aliceblue;
+    padding: 20px;
+}
+
+.mainBox h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.mainBox h3 {
+    font-weight: 300;
+    color: #b0b0b0;
+    margin-bottom: 30px;
 }
 
 .search-box {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 60vw;
-    margin-top: 50px;
+    max-width: 600px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .search-box input {
-    width: 100%;
-    height: 40px;
-    border: solid black 1px;
-    border-radius: 20px;
-    font-size: large;
-    padding-left: 45px; 
-    text-align: left;  
+    flex: 1;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 45px;
 }
 
 .search-box .material-symbols-outlined {
     position: absolute;
-    top: 50%;
     left: 15px;
-    transform: translateY(-50%);
     font-size: 22px;
     color: gray;
+    pointer-events: none;
 }
 
-.header-mainBox{
-    border: solid black 1px;
+.search-box button {
+    background: #00c853;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #00a043;
+}
+
+.header-mainBox {
+    border-bottom: 1px solid #333;
     height: 10vh;
     width: 100vw;
 }

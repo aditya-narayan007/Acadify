@@ -8,16 +8,49 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
 <body>
-    <header class="header-mainBox"></header>
-    <div class="mainBox">
+    <header class="navbar">
+        <img src="requires\acadify_logo.png" alt="img">
+        <div class="nav-item">
+            <button class="dropbtn">Students</button>
+                <div class="dropdown-content">
+                    <a href="#">Time Table</a>
+                    <a href="#">Events/Fests</a>
+                    <a href="#">Assignment</a>
+                    <a href="#">Enquiry</a>
+                </div>
+        </div>
+
+        <div class="nav-item">
+            <button class="dropbtn">College</button>
+            <div class="dropdown-content">
+                <a href="#">Search College</a>
+                <a href="#">Add College</a>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <button class="dropbtn">Clubs</button>
+            <div class="dropdown-content">
+                <a href="#">Search Club</a>
+                <a href="#">Form your Club</a>
+            </div>
+        </div>
+        
+        <div class="signup_btn">
+            <button><b>sign up</b></button>
+        </div>
+</header>
+<div class="mainBox">
     <h1>Learn and Connect</h1>
     <h3>A single place to connect and grow together</h3>
     
     <form action="/action.php" class="search-box">
         <span class="material-symbols-outlined">search</span>
-        <input type="text" placeholder="Assignments   Notes   QuestionPapers" id="search" name="query">
+        <input type="text" placeholder="Search Assignments, Notes, Question Papers..." id="search" name="query">
+        <button type="submit">Search</button>
     </form>
 </div>
+
     <div></div>
     <div></div>
     <div></div>
