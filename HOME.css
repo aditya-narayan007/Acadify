@@ -179,3 +179,97 @@
     height: 10vh;
     width: 100vw;
 }
+
+footer {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 40px 10%;
+    font-size: 14px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin: 6px 0;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+.footer-column ul li a:hover {
+    color: #0073e6;
+}
+.app-links img {
+    width: 140px;
+    margin: 5px 0;
+    display: block;
+}
+.trustpilot {
+    margin-top: 10px;
+    font-size: 13px;
+}
+.trustpilot a {
+    color: #0073e6;
+    text-decoration: none;
+}
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+.social-links a {
+    font-size: 18px;
+    color: #666;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #0073e6;
+}
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+.language-region {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.language-region button {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.language-region button:hover {
+    border-color: #0073e6;
+    color: #0073e6;
+}
+@media(max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-column {
+        width: 100%;
+    }
+}
